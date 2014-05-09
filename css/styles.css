@@ -1,0 +1,42 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,500);
+
+/* Navigation Bar */
+
+.top-bar {
+
+	height: 45px;
+	background: white;
+}
+
+.top-bar .name h1 a, .top-bar-section ul li > a {
+
+	color: blue;
+  text-decoration: none; /*3*/
+  border-bottom: 1px solid #fff;
+}
+
+i {
+	color:blue;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button), .top-bar-section ul, .contain-to-grid {
+
+	background: transparent;
+}
+
+.top-bar .toggle-topbar.menu-icon a, .top-bar .toggle-topbar a {
+	background: transparent;
+	color:blue;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button):hover, .top-bar-section ul:hover {
+	background: transparent;
+	color: blue;
+  border-color: #E74C3C;
+}
+
+/* Body Copy*/
+
+body {
+	font: 500 16px/1.2 Lato;
+}
