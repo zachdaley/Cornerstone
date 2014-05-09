@@ -2,6 +2,44 @@
 
 /* Navigation Bar */
 
+.top-bar, .contain-to-grid {
+	background: white;
+	-webkit-box-shadow: 0 7px 3px -6px #ccc;
+	   -moz-box-shadow: 0 7px 3px -6px #ccc;
+	        box-shadow: 0 7px 3px -6px #ccc;
+}
+
+.top-bar .name h1 a, .top-bar-section ul li > a {
+
+	background: transparent;
+	color: #555;
+	font-weight: bold;
+	font-size: 1em;
+}
+
+
+.top-bar-section li:not(.has-form) a:not(.button), .top-bar-section ul {
+
+	background: transparent;
+	color: #555;
+	font-weight: bold;
+	font-size: 1em;
+}
+
+.top-bar .toggle-topbar.menu-icon a, .top-bar .toggle-topbar a {
+	background: transparent;
+	color:blue;
+}
+
+.top-bar-section ul:hover {
+	background: transparent;
+	color: blue;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button):hover {
+	background: transparent;
+	color: blue;
+}
 
 /* Body Copy*/
 
@@ -10,8 +48,3 @@ body {
 }
 
 /* Orbit */
-
-#slider {
-
-	padding-top: 20px;
-}
