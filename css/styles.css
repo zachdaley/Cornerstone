@@ -4,9 +4,9 @@
 
 .top-bar, .contain-to-grid {
 	background: white;
-	-webkit-box-shadow: 0 7px 3px -6px #ccc;
+	/*-webkit-box-shadow: 0 7px 3px -6px #ccc;
 	   -moz-box-shadow: 0 7px 3px -6px #ccc;
-	        box-shadow: 0 7px 3px -6px #ccc;
+	        box-shadow: 0 7px 3px -6px #ccc;*/
 }
 
 .top-bar .name h1 a, .top-bar-section ul li > a {
