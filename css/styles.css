@@ -1,5 +1,20 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300,500);
 
+/* Globals */
+
+h4 {
+	font-weight: bold;
+	color: #34586e;
+	font: 300 1.5em Lato;
+	font-weight: bolder;
+}
+
+
+body {
+	font: 500 16px/1.2 Lato;
+}
+
+
 /* Navigation Bar */
 
 .top-bar, .contain-to-grid {
@@ -14,48 +29,48 @@
 	background: transparent;
 	color: #555;
 	
-	font-size: 1em;
+	font-size: .5em;
 }
 
 
 .top-bar-section li:not(.has-form) a:not(.button), .top-bar-section ul {
 
 	background: transparent;
-	color: #555;
-	font-size: 1em;
-}
-
-.top-bar .toggle-topbar.menu-icon a, .top-bar .toggle-topbar a {
-	background: transparent;
-	color:blue;
+	color: #8C8E90;
+	font-size: 12px;
+	font-weight: bolder;
 }
 
 .top-bar-section ul:hover {
 	background: transparent;
-	color: blue;
+	color: #34586e;
 }
 
 .top-bar-section li:not(.has-form) a:not(.button):hover {
 	background: transparent;
-	color: blue;
+	color: #34586e;
+	font-weight: bold;
 }
 
-.blurb {}
+.top-bar.expanded .title-area {
+	background: transparent;
+}
 
-/* Body Copy*/
-
-body {
-	font: 500 16px/1.2 Lato;
+.blurb {
+	background: #ddecf9;
+	padding: 20px;
+	border-radius: 10px;
 }
 
 /* Orbit */
 
-#slider {
-
-	margin-top: 25px;
+.enroll {
+	margin-top: 10px;
 }
 
-
+.orbit-container .orbit-slides-container li .orbit-caption {
+	top: 400px;
+}
 
 footer {
 	color: white;
