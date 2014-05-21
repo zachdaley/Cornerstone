@@ -3,7 +3,6 @@
 /* Globals */
 
 h4 {
-	font-weight: bold;
 	color: #34586e;
 	font: 300 1.5em Lato;
 	font-weight: bolder;
@@ -22,11 +21,14 @@ body {
 	/*-webkit-box-shadow: 0 7px 3px -6px #ccc;
 	   -moz-box-shadow: 0 7px 3px -6px #ccc;
 	        box-shadow: 0 7px 3px -6px #ccc;*/
+	        height: 55px;
+	        padding-top: 5px;
+	        z-index: 2;
 }
 
 .top-bar .name h1 a, .top-bar-section ul li > a {
 
-	background: transparent;
+	background: white;
 	color: #555;
 	
 	font-size: .5em;
@@ -35,43 +37,58 @@ body {
 
 .top-bar-section li:not(.has-form) a:not(.button), .top-bar-section ul {
 
-	background: transparent;
+	background: white;
 	color: #8C8E90;
 	font-size: 12px;
 	font-weight: bolder;
 }
 
 .top-bar-section ul:hover {
-	background: transparent;
+	background: white;
 	color: #34586e;
 }
 
 .top-bar-section li:not(.has-form) a:not(.button):hover {
-	background: transparent;
+	background: white;
 	color: #34586e;
 	font-weight: bold;
 }
 
 .top-bar.expanded .title-area {
-	background: transparent;
+	background: white;
 }
 
 .blurb {
 	background: #ddecf9;
 	padding: 20px;
 	border-radius: 10px;
+	top:-500px;
 }
 
 /* Orbit */
 
 .enroll {
 	margin-top: 10px;
+	z-index: 1;
+}
+
+.enrollbtn {
+	top: -80px;
+	left: -40px;
+	background: #34586e;
+	font: 300 1.5em Lato;
+	font-weight: bolder;
 }
 
 .orbit-container .orbit-slides-container li .orbit-caption {
 	top: 400px;
 }
 
+button {
+	background: #34586e;
+	font: 300 1.5em Lato;
+	font-weight: bolder;
+}
 footer {
 	color: white;
 	background-color: #34586e;
