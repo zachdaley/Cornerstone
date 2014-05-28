@@ -15,22 +15,28 @@ body {
 
 
 /* Navigation Bar */
+img.mainlogo {
+	padding-top: 5px;
+}
 
-.top-bar, .contain-to-grid {
+.top-bar {
 	background: white;
-	/*-webkit-box-shadow: 0 7px 3px -6px #ccc;
+	z-index: 2;
+}
+.contain-to-grid {
+	background: white;
+	-webkit-box-shadow: 0 7px 3px -6px #ccc;
 	   -moz-box-shadow: 0 7px 3px -6px #ccc;
-	        box-shadow: 0 7px 3px -6px #ccc;*/
+	        box-shadow: 0 7px 3px -6px #ccc;
 	        height: 55px;
-	        padding-top: 5px;
 	        z-index: 2;
 }
+
 
 .top-bar .name h1 a, .top-bar-section ul li > a {
 
 	background: white;
 	color: #555;
-	
 	font-size: .5em;
 }
 
@@ -41,6 +47,7 @@ body {
 	color: #8C8E90;
 	font-size: 12px;
 	font-weight: bolder;
+	padding-top: 5px;
 }
 
 .top-bar-section ul:hover {
@@ -81,14 +88,18 @@ body {
 }
 
 .orbit-container .orbit-slides-container li .orbit-caption {
-	top: 400px;
+
+	height: 80px;
 }
 
 button {
 	background: #34586e;
-	font: 300 1.5em Lato;
+	font: 300 1em Lato;
 	font-weight: bolder;
+	height: 60px;
+	width: 200px;
 }
+
 footer {
 	color: white;
 	background-color: #34586e;
@@ -97,4 +108,26 @@ footer {
 
 footer a {
 	color: white;
+}
+
+/* Accordion */
+
+.accordion dd > a {
+	background: white;
+	color: #34586e;
+	font: 300 1.5em Lato;
+	font-weight: bold;
+}
+
+.accordion dd > a:hover {
+	background: #ddecf9;
+}
+
+.accordion dd.active > a {
+	background: #ddecf9;
+}
+
+.accordion .content.active {
+	background: #34586e;
+	color:white;
 }

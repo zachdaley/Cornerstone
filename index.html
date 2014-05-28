@@ -15,6 +15,31 @@
 <div class="row">
 <div class="large-12 columns">
 <br>
+
+<!-- Nav login modal -->
+
+<div id="myModal" class="reveal-modal" data-reveal>
+  <h4>Login</h4>
+  <form>
+  <div class="row">
+    <div class="large-12 small-12 columns">
+      <label>Username/Email
+        <input type="text" placeholder="i.e. joe@cornerstoneacademy" />
+      </label>
+    </div>
+    <div class="large-12 small-12 columns">
+      <label>Password
+        <input type="text" placeholder="Password" />
+      </label>
+    </div>
+     <div class="row">
+    <div class="large-12 small-12 columns">
+    <a href="#"><button class="right radius">Submit</button></a>
+  </div>
+</div>
+</form>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
 </div>
 </div>
 
@@ -24,9 +49,8 @@
           <div class="top-bar" data-topbar>
             <ul class="title-area">
               <li class="name">
-                <a href="#"><img src="img/logo.png" /></a></h1>
+                <a href="#"><img class="mainlogo" src="img/logo.png" /></a></h1>
               </li>
-               <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
               <li class="toggle-topbar"><a href="#"><span><i class="fi-list" style="font-size:2em; color: #34586e; background:transparent;"></i></span></a></li>
             </ul>
 
@@ -38,6 +62,7 @@
                 <li><a id="staffBtn">Our Staff</a></li>
                 <li><a id="valuesBtn">Our Values</a></li>
                 <li><a id="contactBtn">Contact</a></li>
+                <li><a href="#" data-reveal-id="myModal">Login</a></li>
               </ul>
             </section>
           </div>
@@ -46,28 +71,40 @@
   </div>
 
 <!-- End Header and Nav -->
- <div>
+
 <!-- First Band (Slider) -->
- 
-  <div class="row" id="home">
-    <div class="large-12 small-12 columns">
-    <div id="slider">
-      <img src="img/orbit1.jpg" class="enroll" />
-      <a href="#"><button class="radius right enrollbtn show-for-large-only">Enroll Now</button></a>
-    </div>
-    <div class="large-12 small-12 columns">
-      <a href="#"><button class="radius center show-for-small-only">Enroll Now</button></a>
-    </div>
-    </div>
+
+ <div class="row">
+  <div class="large-12 small-12 columns">
+     <ul class="example-orbit" data-orbit data-options="animation:slide;
+                  pause_on_hover:true;
+                  animation_speed:500;
+                   slide_number: false;
+                  navigation_arrows:true;
+                  bullets:false;">
+      <li>
+        <a href="#"><img src="img/orbit1.jpg" alt="slide 1" /></a>
+        <!-- <div class="orbit-caption">
+      Enroll today to make a difference in your child's education.&nbsp;&nbsp;&nbsp;<button class="orbtn">Enroll Now</button>
+    </div> -->
+      </li>
+      <li>
+        <a href="#"><img src="img/orbit2.jpg" alt="slide 2" /></a>
+      </li>
+      <li>
+        <a href="#"><img src="img/orbit3.jpg" alt="slide 3" /></a>
+      </li>
+    </ul>
   </div>
-  
+</div>
+  <br>
 <!-- Three-up Content Blocks -->
 
   <div class="row">
     <div class="large-4 small-12 columns" id="about">
       <h4 align="center"><i class="fi-megaphone" style="font-size:2em; color: #34586e; background:transparent;" align="center"></i><br>About Us</h4>
       <hr style="color: #34586e;">
-      <p class="blurb"> Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
+      <p class="blurb">Cornerstone Christian Academy was started by a group of parents and teachers who wanted to provide quality Christian education for their families and the surrounding community.  In striving to accomplish this goal we have placed Christ in the center of our school as the Cornerstone upon which a strong education is built.</p>
     </div>
     
     <div class="large-4 small-12  columns" id="staff">
@@ -79,17 +116,84 @@
     <div class="large-4 small-12 columns" id="values">
       <h4 align="center"><i class="fi-target" style="font-size:2em; color: #34586e; background:transparent;"></i><br>Our Values</h4>
       <hr style="color: #34586e;">
-      <p class="blurb"> Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
+      <p class="blurb">We will provide a comprehensive education with high academic standards embedded in Christian principles.  We will help children grow mentally, socially, physically, and spiritually.  Our teaching is based upon the Bible as God’s Word, and the lordship of Jesus Christ. We have established the following goals to facilitate in accomplishing our mission.</p>
     </div>
-  
+  <br>
+    <br>
+    <div class="row">
+      <div class="large-12 small-12 columns">
+        <hr>
     </div>
   </div>
-    <br>
-    <br>
-<!-- Call to Action Panel -->
+    </div>
+  </div>
+  
+<!-- Accordion -->
+
+<div class="row" style="background:#f2f2f2; border-style:solid 1px; border-color:#d8d8d8;">
+  <div class="large-12 small-12 columns">
+<br>
+<h4>Additional Information</h4>
+    <dl class="accordion" data-accordion>
+  <dd>
+    <a href="#panel1">Statement of Faith</a>
+    <div id="panel1" class="content">
+      In John 14:6 Jesus said, <em>“I am the way, the truth, and the life: no man cometh unto the Father, but by me”</em>.  Cornerstone Christian Academy is committed to educating and training children in “The Way”, “The Truth”, and “The Life”.
+      <br>
+      <br>
+<strong>The Way:</strong>  Deuteronomy 6:7 and Proverbs 22:6 show that that the primary responsibility of education lies with the parents.  Cornerstone aids parents and helps facilitate the process of each child learning the ways of the Lord.
+<br>
+<br>
+
+<strong>The Truth:</strong> In John 8:31-32 Jesus spoke to His followers about continuing in His Word, being disciples, knowing the truth, and the truth setting them free.  Cornerstone believes in disciplining children in the truths of the Bible, so that as they grow into men and women of God, they will in turn disciple others to follow Jesus.  We also believe that one of education’s main goals is to search out truth.  As educators, we will try to bring truth to subject areas and will encourage students to use Biblical truths to interpret what they see and hear.
+<br>
+<br>
+<strong>The Life:</strong> Matthew 6:33 tells us that we are to seek first the Kingdom of God and all of life’s needs shall be added unto us.  At Cornerstone we know that if we teach our students to seek the Kingdom of God first and foremost in their lives, that Jesus will be faithful to fulfill His promise to each individual.
+    </div>
+  </dd>
+  <dd>
+    <a href="#panel2">Our Mission Statement</a>
+    <div id="panel2" class="content">
+      We will provide a comprehensive education with high academic standards embedded in Christian principles.  We will help children grow mentally, socially, physically, and spiritually.  Our teaching is based upon the Bible as God’s Word, and the lordship of Jesus Christ. We have established the following goals to facilitate in accomplishing our mission.
+<br><br>
+<ul>
+  <li>To provide non-denominational, Biblical teaching that will teach the basic general Christian beliefs and principles listed in our Statement of Faith.
+  </li>
+ 
+
+<li>To provide teaching, encouragement, specific guidelines, as well as appropriate discipline, in order to build strong Christian character in each student.</li>
+ 
+
+<li>To provide a strong academic program that satisfies state academic requirements and prepares young people to live successfully in this world.  Students will be given a strong foundation in the basics of Bible, reading, language, literature, mathematics, science and history.</li>
+ 
+
+<li>To provide upstanding, certified Christian teachers who will be role models for the students.</li></ul>
+    </div>
+  </dd>
+  <dd>
+    <a href="#panel3">Before and After Care Programs</a>
+    <div id="panel3" class="content">
+      <strong>Before and After Care programs Kindergarten through 8th grade</strong>
+      <br><br>
+<ul>
+<li>Before School Care Begins at 6:30 AM until 8:30 AM</li>
+
+<li>After School Care Begins at 3:15 PM untl 5:30 PM</li>
+</ul>
+  </dd>
+</dl>
+<br>
+  </div>
+
+</div>
+
+<!-- Contact Form -->
+
 <div class="row">
+  <hr>
     <div class="large-12 columns" id="contact">
-    
+    <br>
+    <h4>Contact Us</h4>
       <div class="panel">
         <form>
   <div class="row">
