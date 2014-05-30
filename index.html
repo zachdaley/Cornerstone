@@ -62,7 +62,8 @@
                 <li><a id="aboutBtn">About Us</a></li>
                 <li><a id="benefitBtn">Benefits</a></li>
                 <li><a id="valuesBtn">Our Values</a></li>
-                <li><a id="contactBtn">Contact</a></li>
+                <li class="hide-for-small"><a id="contactBtn">Contact</a></li>
+                <li class="show-for-small"><a id="contactsmallBtn">Contact</a></li>
                 <li><a href="#" data-reveal-id="myModal">Login</a></li>
               </ul>
             </section>
@@ -228,20 +229,20 @@
 <br><br>
 <!-- Contact Form -->
 
-<div class="row panel" style="border-radius: 10px; border-color:transparent;">
+<div class="row panel hide-for-small" style="border-radius: 10px; border-color:transparent;">
    <div class="large-6 small-12 columns hide-for-small">
     <div class="googleMap" 
     data-output="iframe" 
     data-zoom="15" 
     data-type="roadmap" 
-    data-address="4224 E 4th Ave
+    data-address="Cornerstone Christian Academy 4224 E 4th Ave
 Spokane, WA 99202" 
     data-width="400" 
     data-height="400">
 </div>
   </div>
 
-    <div class="large-6 small-12 columns" id="contact">
+    <div class="large-6 small-12 columns hide-for-small" id="contact">
     <br>
     <h4>Contact Us</h4>
       <div>
@@ -293,6 +294,22 @@ Spokane, WA 99202"
       
     </div>
   </div>
+
+<!-- Hidden Telephone and Map for Mobile View -->
+
+  <div class="row panel show-for-small" id="contactsmall" style="border-radius: 10px; border-color:transparent;">
+    <div class="large-12 columns">
+      <h4 align="center">Contact Us!</h4>
+      <hr>
+        <div class="large-6 small-12 columns">
+          <p align="center" style="font-size:2em;"><a href="tel:15098351235"><i class="fi-telephone" style="font-size:4em; color:#34586e;"></a></i></p>
+        </div>
+        <hr>
+        <div class="large-6 small-12 columns">
+          <p align="center" style="font-size:2em;"><a href="https://www.google.com/maps/place/Cornerstone+Christian+Academy/@47.652412,-117.347455,15z/data=!4m2!3m1!1s0x0:0x823238e89b2d7ed1?hl=en-US"><i class="fi-marker" style="font-size:4em; color:#34586e;"></a></i></p>
+        </div>
+    </div>
+  </div> 
  
   <!-- Footer -->
   
