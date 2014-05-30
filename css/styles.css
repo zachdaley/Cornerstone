@@ -1,8 +1,9 @@
+/*****************************************
+ 				Global CSS 
+ ****************************************/
 @import url(http://fonts.googleapis.com/css?family=Lato:300,500);
 
-/* Globals */
-
-h4 {
+h4, .panel h4 {
 	color: #34586e;
 	font: 300 1.5em Lato;
 	font-weight: bolder;
@@ -14,7 +15,10 @@ body {
 }
 
 
-/* Navigation Bar */
+/*******************************************
+ 				Navigation Bar 
+ ******************************************/
+
 img.mainlogo {
 	padding-top: 5px;
 }
@@ -65,6 +69,10 @@ img.mainlogo {
 	background: white;
 }
 
+/*******************************************
+ 				About Us Row 
+ ******************************************/
+
 .blurb {
 	background: #ddecf9;
 	padding: 20px;
@@ -72,7 +80,19 @@ img.mainlogo {
 	top:-500px;
 }
 
-/* Orbit */
+.blurbrow {
+	margin-top: 20px;
+	z-index: 1;
+}
+
+path {
+
+	fill:#34586e;
+}
+
+/*******************************************
+ 			Orbit Container 
+ ******************************************/
 
 .enroll {
 	margin-top: 10px;
@@ -100,17 +120,10 @@ button {
 	width: 200px;
 }
 
-footer {
-	color: white;
-	background-color: #34586e;
 
-}
-
-footer a {
-	color: white;
-}
-
-/* Accordion */
+/*******************************************
+         Additional Info Accordion
+ ******************************************/
 
 .accordion dd > a {
 	background: white;
@@ -130,4 +143,30 @@ footer a {
 .accordion .content.active {
 	background: #34586e;
 	color:white;
+}
+
+/*******************************************
+         	Footer
+ ******************************************/
+
+footer {
+	color: white;
+	background-color: #34586e;
+
+}
+
+footer a {
+	color: white;
+}
+
+
+/*******************************************
+         	Misc CSS
+ ******************************************/
+
+ div#gmap {
+	margin-top: 20px;
+background: black;
+	height: 325px;
+	padding: 10px;
 }
